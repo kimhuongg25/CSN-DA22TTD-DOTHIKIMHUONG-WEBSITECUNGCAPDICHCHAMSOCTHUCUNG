@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form {
+    background-color: white;
+    border-radius: 10px; /* Bo góc */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Hiệu ứng đổ bóng */
+    padding: 30px;
+    width: 600px;
+}
+
+.form-heading{
+    font-size: 30px;
+    color: black;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Ô nhập liệu */
+form table tr td {
+    padding: 10px;
+    vertical-align: top;
+    color: black;
+    font-size: 18px;
+}
+
+form table tr td input,
+form table tr td select,
+form table tr td textarea {
+    width: calc(100% - 20px); /* Chiếm toàn bộ chiều ngang, trừ padding */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-top: 5px;
+    background-color: #f9f9f9;
+}
+
+form table tr td textarea {
+    resize: none; /* Không cho phép thay đổi kích thước */
+}
+
+/* Nút bấm */
+form table tr td button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #3EAEF4 ;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    float: right;
+}
+
+form table tr td button:hover {
+    background-color: #27A4F2; /* Tông màu đậm hơn khi hover */
+}
+
+/* Liên kết bên trong nút */
+form table tr td button a {
+    text-decoration: none;
+    color: #ffffff;
+}
